@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="/style/styletarjetas.css">
+    <link rel="stylesheet" href="/style/styleheader.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ImpreFast</title>
+</head>
+<body>
+  <header>
+    <div class="img1"><img src="/imagenes/logo.png" alt=""></div>
+    <div class="img2"><a href="/index.html"><img src="/icons/flecha-izquierda.png" alt="" ></a> </div>
+  </header>
+  
+   <main> 
+    <section>
+      <div id="idMenu" class="menu">
+        <a href="#" onclick="changeContent('contenido1')">
+          <button class="boton" >Precios</button>
+        </a>
+        <a href="#" onclick="changeContent('contenido2')">
+          <button class="boton">Imagenes</button>
+        </a>
+      </div>
+      <hr style="border: 1px solid #00000060; margin-top: 100px;" width="500px">
+      <!-- Sección de contenido 1: Precios -->
+      <div id="contenido1">
+        <table>
+          <tr><th></th><th>1 lado</th><th>2do lado</th></tr>
+          <tr><td>120pz</td><td>$120</td><td>$180</td></tr>
+          <tr><td>200pz</td><td>$204</td><td>$265</td></tr>
+          <tr><td>300pz</td><td>$277</td><td>$468</td></tr>
+          <tr><td>500pz</td><td>$456</td><td>$780</td></tr>
+          <tr><td>1000pz</td><td>$900</td><td>$1,440</td></tr>
+          <tr><td>2000pz</td><td>$1,620</td><td>$2,300</td></tr>
+        </table>
+      </div>
+
+      <!-- Sección de contenido 2: Imágenes -->
+      <div id="contenido2" style="display:none;">
+        <div class="image-container">
+          <img src="/imagenes/tarjetaOIP.jpg" alt="Imagen 1" class="interactive-img">
+          <img src="/imagenes/tarjetas_ARMEL.jpg" alt="Imagen 2" class="interactive-img">
+          <img src="/imagenes/tarjetaaOIP3.jpg" alt="Imagen 3" class="interactive-img">
+          <!-- Añadir más imágenes según sea necesario -->
+      </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+  </footer>
+  <script src="/javascript.js"></script>
+</body>
+</html>

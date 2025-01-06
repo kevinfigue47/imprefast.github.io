@@ -1,0 +1,188 @@
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('/imagenes/cmyk.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+header { 
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    color: antiquewhite;
+    font-size: 30px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header div {
+    padding: 10px;
+}
+.img1{
+    width: 50%;
+    margin-left: 50px;
+    }
+    header img{
+        align-items: right;
+        width: 10%;
+    }
+
+
+
+header div {
+    padding: 10px;
+}
+
+main {
+    padding: 20px;
+    margin: 120px auto;
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, 0.9); /* Añadir transparencia */
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+section {
+    margin-top: 20px; /* Espacio entre secciones */
+}
+
+section .bien {
+    padding: 10px; /* Ajustar el padding */
+    margin-left: 180px;
+    margin-right: 180px;
+    background-color: rgb(139, 87, 187);
+    color: white;
+    text-align: center;
+    border-color: black;
+}
+.productos h1 {
+  background-color: rgb(50, 50, 194);
+  color: white;
+  text-align: center;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+h2 {
+    color: darkcyan;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+footer{
+    background-color: black;
+}
+main p , h2 {
+    text-align: center;
+}
+section{
+    text-align: center;
+}
+th{
+    letter-spacing: 2px;
+}
+
+table td, th{
+    padding: 30px;
+    
+  }
+  table {
+    margin: 50px auto; /* Centra horizontalmente con márgenes automáticos */
+    border-collapse: collapse; /* Hace que las celdas se vean unidas */
+     width:70%;
+}
+
+
+button{
+    border-radius: 10px;
+    background-color: white;
+    padding: 30px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.boton {
+    margin-right: 60px; /* Agrega espacio entre los botones */
+  }
+  
+  /* Si necesitas que el último botón no tenga margen derecho, puedes usar esto */
+  a:last-child .boton {
+    margin-right: 0;
+  }
+
+  
+  
+  .boton:hover {
+    background-color: #595a599c; /* Cambio de color al pasar el mouse */
+  }
+  
+  .image-container {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Estilo básico para las imágenes */
+.interactive-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+/* Evitar que las imágenes se desborden del contenedor */
+.image-container {
+    overflow: hidden;
+}
+
+
+@media (max-width: 768px) {
+    .image-container {
+    display: grid;
+    grid-template-columns: 1fr;
+   text-align: center;
+   padding-left: 70px;
+    }
+    table{
+        width: 10%;
+       
+    }
+    button{
+        background-color: white;
+        padding: 0 auto;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    .boton {
+        margin-right: 0px ; /* Agrega espacio entre los botones */
+      }
+      hr{
+        width: 300px;
+      }
+      a:last-child .boton {
+        margin-top: 40px;
+      }
+      
+     .img1 img{
+        width: 70%;
+      }
+     .img2 img {
+        width: 25%;
+        margin-left: 100px;
+     }
+}

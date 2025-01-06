@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('/imagenes/cmyk.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+header { 
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    color: antiquewhite;
+    font-size: 30px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header div {
+    padding: 10px;
+}
+.img1{
+    width: 50%;
+    margin-left: 50px;
+    }
+
+header img{
+  
+        align-items: right;
+        width: 10%;
+    }
+
+.img2{
+    margin-right: 0 auto;
+}
+
+header div {
+    padding: 10px;
+}
+.prom a{
+text-decoration: none;
+
+}
+.prom p{
+    color: white;
+}
+
+main {
+    padding: 20px;
+    margin: 120px auto;
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, 0.9); /* Añadir transparencia */
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+section {
+    margin-top: 20px; /* Espacio entre secciones */
+}
+
+section .bien {
+    padding: 10px; /* Ajustar el padding */
+    margin-left: 180px;
+    margin-right: 180px;
+    background-color: rgb(139, 87, 187);
+    color: white;
+    text-align: center;
+    border-color: black;
+}
+.productos h1 {
+  background-color: rgb(50, 50, 194);
+  color: white;
+  text-align: center;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+h2 {
+    color: darkcyan;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+footer{
+    background-color: black;
+}
+main p , h2 {
+    text-align: center;
+}
+
+@media (max-width: 768px) {   
+    header img{
+        align-items: right;
+        width: 10%;
+    }
+    header p{
+        margin-right :200px;
+
+        
+    }
+    header img{
+        
+        width: 40%;
+    }
+    
+   
+      a:last-child .boton {
+        margin-top: 40px;
+      }
+      
+     .img1 img{
+        width: 70%;
+      }
+     .img2 img {
+        width: 25%;
+        margin-left: 100px;
+     }
+}

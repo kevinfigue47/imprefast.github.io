@@ -1,0 +1,250 @@
+/* Estilos base (para pantallas grandes por defecto) */
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('/imagenes/cmyk.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+header img{
+    width: 6%;
+    margin-left: 50px;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        color: antiquewhite;
+        font-size: 30px;
+        background-color: black;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+    
+    header div {
+        padding: 10px;
+    }
+    .prom a {
+        text-decoration: none;
+       
+    }
+    .prom p{ 
+        margin-right: 300px;
+        color: white;
+    }
+main {
+    padding: 20px;
+    margin: 120px auto;
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, 0.836); /* Añadir transparencia */
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+section {
+    margin-top: 20px; /* Espacio entre secciones */
+}
+
+section .bien {
+    padding: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: rgb(139, 87, 187);
+    color: white;
+    text-align: center;
+    border-color: black;
+}
+
+.sub2 img{
+    width: 30%;
+    
+    
+}
+.sub2{
+    text-align: center;
+}
+
+
+h2 {
+    color: darkcyan;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+footer {
+    height: 300px;
+    text-align: center;
+    box-shadow:0 8px 20px rgba(0, 0, 0, 0.5); 
+    background-color: rgb(255, 253, 253);
+} 
+footer ul {
+    list-style-type: none; /* Quita los puntos de los elementos de lista */
+    padding: 0; /* Elimina el padding por defecto */
+    margin: 0; /* Elimina el margen por defecto */
+}
+
+footer ul li {
+    display: inline; /* Esto pone los elementos de la lista en línea (horizontalmente) */
+    margin-right: 15px; /* Espacio entre los elementos */
+}
+
+footer ul li a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: #000; /* Cambia el color de los enlaces si lo deseas */
+} 
+
+footer ul li img{
+    width: 4%;
+}
+footer .rayas{
+    margin-top: 60px;
+}
+footer .rayas hr {
+   
+    border: none;
+    height: 6px; /* Aumenta el grosor de las rayas */
+    margin: 10px 0; /* Espaciado entre las rayas */
+}
+
+footer .rayas .r1 {
+    background-color: #ff5833e3; /* Color para la primera raya */
+}
+
+footer .rayas .r2 {
+    background-color: #fffc33e1; /* Color para la segunda raya */
+}
+
+footer .rayas .r3 {
+    background-color: #3358ffee; /* Color para la tercera raya */
+}
+main p, h2 {
+    text-align: center;
+}
+
+/* Grid de productos para pantallas grandes */
+.producto {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas */
+    gap: 20px; /* Espacio entre los elementos */
+    text-align: center;
+}
+
+
+.producto article {
+    background-color: white;
+    padding: 5px;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 200px; /* Altura fija para todos los artículos */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribuye el contenido dentro del artículo */
+    border: 1px solid black; 
+    border-radius: 10px; 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Sombra más pronunciada */
+}
+
+.producto article img {
+    width: 80%; /* Ajusta el tamaño de las imágenes */
+    margin: 0 auto; /* Centra la imagen */
+    max-height: 150px; /* Limita la altura de las imágenes */
+    object-fit: contain; /* Mantiene la proporción de la imagen */
+}
+
+.producto article:hover {
+    transform: translateY(-10px); /* Efecto de elevación */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6); /* Sombra más pronunciada al hacer hover */
+}
+
+.producto a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Media Query para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    .sub2 img{
+        width: 50%;
+        
+    }
+    header {
+        font-size: 24px; /* Reducir tamaño de la fuente */
+    }
+    header img{
+        width: 20%;
+        margin-left: 150px;
+    }
+
+    main {
+        margin: 120px 10px 20px 10px; /* Ajustar márgenes en pantallas más pequeñas */
+        padding: 15px;
+    }
+
+    .bien {
+        margin-left: 50px;
+        margin-right: 50px;
+        font-size: 16px;
+    }
+
+    .productos h1 {
+        font-size: 22px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .producto {
+        grid-template-columns: 1fr; /* Una columna para pantallas pequeñas */
+    }
+
+    .producto article {
+        margin-left: 50px;
+        margin-right: 50px;
+        height: auto; /* Dejar que el contenido se ajuste */
+    }
+
+    .producto article img {
+        width: 100%; /* Las imágenes ocupan el 100% del artículo */
+        max-height: 120px; /* Limitar la altura en móviles */
+    }
+}
+
+/* Media Query para pantallas muy pequeñas (por ejemplo, teléfonos con pantallas más pequeñas) */
+@media (max-width: 480px) {
+    .sub2 img{
+        width: 50%;
+        
+    }
+    header {
+        font-size: 20px; /* Ajuste adicional para pantallas pequeñas */
+    }
+
+    .bien {
+        margin-left: 0;
+        margin-right: 0;
+        font-size: 14px;
+    }
+
+    .productos h1 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px; /* Reducir tamaño de fuente para párrafos */
+    }
+
+    .producto article {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .producto article img {
+        max-height: 100px; /* Ajustar la altura de las imágenes */
+    }
+}
